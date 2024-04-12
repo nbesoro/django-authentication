@@ -1,4 +1,4 @@
-# Django static files on DEBUG False
+# Django authentication
 
 Django authentication
 
