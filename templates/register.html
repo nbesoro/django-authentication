@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load crispy_forms_tags %} {% load static %}
+{% load static %}
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -15,11 +15,11 @@
 				<form class="w-50" method="POST" action="">
 					<h1 class="text-center">Inscription</h1>
 
-					{% csrf_token %} {{form|crispy}}
-
 					<button class="btn btn-primary">S'Inscrire</button>
 					<p>
-						<a href="{% url 'login' %}">Already have account?</a>
+						<a href="{% url 'login' %}"
+							>Vous avez déjà un compte ?</a
+						>
 					</p>
 				</form>
 			</div>

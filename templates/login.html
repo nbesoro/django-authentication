@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load crispy_forms_tags %} {% load static %}
+{% load static %}
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
@@ -13,12 +13,11 @@
 			<div class="d-flex align-items-center justify-content-center mt-5">
 				<form class="w-50" method="POST" action="">
 					<h1 class="text-center">Connexion</h1>
-					{% csrf_token %} {{form|crispy}}
 
 					<button class="btn btn-primary">Se connecter</button>
 					<p>
 						<a href="{% url 'signup' %}"
-							>Dont have Account Create</a
+							>Pas de compte Créer un nouveau</a
 						>
 					</p>
 				</form>
